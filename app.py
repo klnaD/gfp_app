@@ -139,4 +139,4 @@ demo = gr.Interface(
     examples=[['a1.jpg', 'v1.4', 2], ['a2.jpg', 'v1.4', 2], ['a3.jpg', 'v1.4', 2],['a4.jpg', 'v1.4', 2]])
     
 demo.queue(concurrency_count=4)
-demo.launch()
+demo.launch(inbrowser=True, server_port=8080, share=True)
